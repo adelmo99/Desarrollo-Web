@@ -1,0 +1,38 @@
+<div class="bg-light p-3 mt-3">
+    <div class="row justify-content-center text-center">
+        <div class="col-12 col-sm-6">
+            <h1 class="border-bottom border-4 border-dark p-3 bg-primary text-light">CÁLCULO DE PROMEDIO</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 text-center text-dark">
+            <label for="nota1">Ingrese nota 1:</label>
+            <input type="text" name="nota1" id="nota1" class="form-control" placeholder="0.00">
+            <label for="nota2">Ingrese nota 2:</label>
+            <input type="text" name="nota2" id="nota2" class="form-control" placeholder="0.00">
+            <label for="nota3">Ingrese nota 3:</label>
+            <input type="text" name="nota3" id="nota3" class="form-control" placeholder="0.00">
+            <br>
+            <label for="">Su promedio es: </label>
+            <span id="result_promedio"></span><br>
+
+            <label for="">Estado: </label>
+            <span id="estado_promedio"></span><br>
+
+            <span id="mensajeError" class="text-center"></span><br>
+
+            <div class="col-12 container_btns">
+                <button class="btn btn-primary col-12 col-sm-4 mb-3" onclick="promedio()">Calcular</button>
+                <button class="btn btn-primary col-12 col-sm-4 mb-3" onclick="borrar()">Borrar</button>
+                <a href="index.php?name=proyectos" class="btn btn-danger col-12 col-sm-4 mb-3">Salir</a><br>
+
+            </div>
+            <div class="row container_btns col-12">
+
+                <a href="index.php?name=index" class="btn btn-success m-2 border">Atrás</a>
+                <a href="index.php?name=ejercicio3" class="btn btn-success m-2 border">Siguiente Ejercicio</a>
+            </div>
+        </div>
+    </div>
+</div>
+

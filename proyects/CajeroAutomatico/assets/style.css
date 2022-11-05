@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #3026a2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    transition: scroll-behavior 3s ease-in-out;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+.logotipo{
+    margin-right: auto;
+    filter: contrast(1.5);
+}
+.header{
+    background-image: radial-gradient(circle at 56.16% -20.44%, #de53ff 0, #a746eb 25%, #6d36c7 50%, #3026a2 75%, #00187f 100%);;
+    box-shadow: 0 0 25px 2px #000;
+    display: flex;
+    height: 5rem;
+    margin: 1em auto;
+    overflow: hidden;
+    padding: 0 25px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.header_nav_ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+a{
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+.a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #de53ff;
+    position: relative;
+    left: 0;
+    transition: all .2s ease-in-out;
+}
+.a:hover::after{
+    width: 100%;
+}
+i{
+    margin-right: 5px;
+}
+img.image_img{
+    width: 100%;
+    height: 580px;
+    filter: opacity(0.2);
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+}
+.image_container{
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* -- INITIATION -- IMAGE */
+.image h2{
+    text-align: center;
+    color: #bbb;
+    text-shadow: 0 0 5px #000;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image h2 b{
+    font-size: 6rem;
+    color: #c54;
+    font-family: 'Times New Roman', Times, serif;
+}
+.containerbutton{
+    width: 100%;
+    text-align: center;
+}
+.containerbutton a i{
+    font-size: 4rem;
+    font-weight: 700;
+    animation-name: arrowEffect;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    position: absolute;
+    bottom: 25px;
+}
+
+@keyframes arrowEffect {
+    0%{
+        color: #eee;
+    }
+    50%{
+        color: #6d36c7;
+    }
+    100%{
+        transform: translateY(-25px);
+        color: #eee;
+    }
+}
+
+/* -- Ventajas del cajero automático -- */
+.containerSection_id{
+    height: calc(100vh - 32px);
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+.containerSection_id h2{
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #eee;
+}
+.containerSection{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.containerSection_item{
+    box-shadow: 0 0 15px 3px #a746eb;
+    background-color: #3026;
+    border-radius: 15px;
+    height: 340px;
+    margin: 25px 0;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+.containerSection_item h4{
+    font-size: 2rem;
+    color: #ccc;
+    margin: 0 30px;
+    padding-top: 35px;
+}
+.containerSection_item i{
+    font-size: 6.5rem;
+    color: #ccc;
+}
+.containerSection_item:hover{
+    transform: translateY(-10px);
+    height: 410px;
+    transition: all .3s ease-in-out;
+}
+
+/* INITIATION -- ventajas del cajero automatico -- */
+.parrafo_mensaje_modicador{
+    padding: 22px;
+    color: #eee;
+    opacity: 0;
+    cursor: default;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .4s ease-in;
+}
+.containerSection_item:hover > .parrafo_mensaje_modicador{
+    opacity: 1;
+    padding-top: 0;
+    transition: all .5s ease-in-out;
+}
+.subElements{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* FOOTER -- Todos los derchos reservados */
+.footer{
+    background-color: #3026a2;
+    color: #bbb;
+    height: 1.5rem;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-top: 2px solid #a746eb;
+}
+
+/* Style -- Scroll */
+html::-webkit-scrollbar {
+    background: transparent;
+    width: 12px;
+}
+html::-webkit-scrollbar-thumb {
+    background: #00187f;
+    border-radius: 10px;
+}

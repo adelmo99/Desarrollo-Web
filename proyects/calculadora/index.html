@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Curso JavaScript</title>
+    <link rel="shortcut icon" href="calcular.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="memory"><</div>
+            <div class="menu">
+                <div class="containerResults"></div>
+            </div>
+            
+            <div class="container_toShow">
+                <input class="toShow" type="text" value="" placeholder="0" disabled>
+            </div>
+            <div class="teclas_genericas">
+                <div class="teclas_main">
+                    <div class="teclasNumericas">
+                        <h2 class="tecla tecla-ac">AC</h2>
+                        <h2 class="tecla tecla-parentesis">()</h2>
+                        <h2 class="tecla tecla-porcentaje">%</h2>
+                        <h2 class="tecla tecla-division modificar_color">÷</h2>
+                        <h2 class="tecla tecla-9">9</h2>
+                        <h2 class="tecla tecla-8">8</h2>
+                        <h2 class="tecla tecla-7">7</h2>
+                        <h2 class="tecla tecla-x modificar_color">x</h2>
+                        <h2 class="tecla tecla-6">6</h2>
+                        <h2 class="tecla tecla-5">5</h2>
+                        <h2 class="tecla tecla-4">4</h2>
+                        <h2 class="tecla tecla-guion modificar_color">-</h2>
+                        <h2 class="tecla tecla-3">3</h2>
+                        <h2 class="tecla tecla-2">2</h2>
+                        <h2 class="tecla tecla-1">1</h2>
+                        <h2 class="tecla tecla-signoMas modificar_color">+</h2>
+                        <h2 class="tecla tecla-borrarCaracter">←</h2>
+                        <h2 class="tecla tecla-0">0</h2>
+                        <h2 class="tecla tecla-puntoDecimal">.</h2>
+                        <h2 class="tecla tecla-signoIgual">=</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.min.js" integrity="sha512-xOu54cGoQRU4PxCzB268p5N3MPvH4EHtoQjdw7y0qlkKyMvS5D9IsYFPP0NDtrky7SqBntN8cPtl0kx+UKrBgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="codigo.js"></script>
+    <script src="help.js"></script>
+</body>
+</html>

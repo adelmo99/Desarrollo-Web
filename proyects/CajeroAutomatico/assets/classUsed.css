@@ -1,0 +1,15 @@
+.error{
+    color: #a00;
+    border: 2px solid #b00;
+}
+form p{
+    color: #e00;
+    text-shadow: 1px 1px 5px #000;
+}
+form p::selection{
+    color: #e00;
+    background-color: transparent;
+}
+button:window-inactive{
+    outline: 2px solid #000;
+}

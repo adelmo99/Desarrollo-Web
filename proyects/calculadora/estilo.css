@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2b8;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+.row {
+    min-width: 25%;
+    max-width: 30%;
+    margin: 3rem auto;
+    background-color: #000;
+    box-shadow: 0 0 25px 2px #000;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+}
+.memory{
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #f80;
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transform: scale(0.9);
+    z-index: 1;
+    transition: all .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toShow {
+    background-color: #222;
+    color: #fff;
+    width: 93%;
+    height: 3.5rem;
+    text-align: right;
+    padding: 0 1.5rem;
+    margin: 1rem 0;
+    border-radius: 15px 15px 1px 1px;
+    outline: none;
+    font-size: 1.7rem;
+    overflow-x: scroll;
+}
+.tecla {
+    background-color: #04a;
+    padding: .7rem;
+    border-radius: 5px;
+}
+.teclas_genericas .teclas_main{
+    margin: 0 auto;
+    max-width: 93%;
+    padding-bottom: 1rem;
+}
+.teclasNumericas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: .8rem;
+}
+.tecla-ac{
+    background-color: #0a7;
+    /* grid-column: 1/3; */
+}
+.tecla-signoIgual{
+    background-color: #075;
+}
+.teclas_superiores_deLado .tecla, .modificar_color{
+    background-color: #07a;
+}
+
+.containerResults{
+    position: absolute;
+    background-color: #000;
+    color: #eee;
+    outline: 1px solid #888;
+    margin: 15px;
+    padding: 10px 2px;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .5s;
+    overflow-y: scroll;
+}
+.empty{
+    width: 100%;
+    height: 100%;
+    color: #777;
+    margin: auto;
+    margin-right: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem
+}
+.containerResults::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.containerResults::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+.containerResults::-webkit-scrollbar:horizontal {
+    display: none;
+}
+.containerResults::-webkit-scrollbar-thumb {
+    background-color: #07a;
+    border-radius: 25px;
+}
+.containerResults::-webkit-scrollbar-track {
+    border-radius: 25px;
+}
+.result_item{
+    background-color: #07aa;
+    color: #fff;
+    padding: 10px 0;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.opacity{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .8s;
+}
+.tecla:hover{
+    cursor: pointer;
+    background-color: inherit;
+    outline: 2px solid #04a;
+}
+.modificar_color:hover{
+    background-color: inherit;
+    outline: 2px solid #07a;
+}
+.tecla-ac:hover{
+    background-color: inherit;
+    outline: 2px solid #0a7;
+}
+.tecla-signoIgual:hover{
+    background-color: inherit;
+    outline: 2px solid #075;
+}
+.memory:hover{
+    background-color: #f50;
+}
+.memory_active{
+    background-color: #f30;
+    transform: scale(1);
+    transform: rotate(-90deg);
+    box-shadow: 0 0 5px 1px #f30;
+}
+.tecla:active{
+    background-color: #222;
+}
+.red{
+    color: #f009;
+    background-color: #111;
+    border: 1px solid #f009;
+}
+@media screen and (max-width:730px) {
+    .row{
+        max-width: 85%;
+        min-width: 210px;
+        overflow: hidden;
+    }
+    .teclasNumericas{
+        overflow: hidden;
+        grid-gap: .6rem;
+        padding: 1px;
+    }
+    .toShow{
+        font-size: 1.2rem;    
+    }
+    .result_item{
+        font-size: .9rem;
+    }
+}
